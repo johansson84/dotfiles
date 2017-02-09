@@ -1,0 +1,12 @@
+effektivitetsfaktor = .7
+frånvarodagar = 2
+sprintlängd = 10
+resurser = 6
+uppskattadestorypointsperdag = 3
+
+
+
+beräknadfrånvaro = frånvarodagar * effektivitetsfaktor
+beräknadnärvaro = (((resurser * sprintlängd) * effektivitetsfaktor) - beräknadfrånvaro)
+beräknadkapacitet = beräknadnärvaro * uppskattadestorypointsperdag
+
